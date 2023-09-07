@@ -72,14 +72,14 @@ for i in range(len(converted)):
 print(converted)
 while count <= 6:
     user = input("Enter a letter\n")
-if user not in computer:
-    count+=1
-else:
-    for i in range(len(computer)):
-        if computer[i] == user:
-            converted[i] = user
-if "_" not in converted:
-    count = 8
+    if user not in computer:
+        count+=1
+    else:
+        for i in range(len(computer)):
+            if computer[i] == user:
+                converted[i] = user
+        if "_" not in converted:
+            count = 8
 if count < 7:
     print(HANGMANPICS[count])
 else:
@@ -88,4 +88,4 @@ print(converted)
 if count == 8:
     print("You won a kiss from Ulises Escalante!!")
 else:
-    print("You won a beatover by IT department!!")
+        print("You won a beatover by IT department!!")
