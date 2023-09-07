@@ -1,54 +1,54 @@
 import random
 
 HANGMANPICS = ['''
-+---+
-| |
-|
-|
-|
-|
+  +---+
+  |   |
+      |
+      |
+      |
+      |
 =========''', '''
-+---+
-| |
-O |
-|
-|
-|
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
 =========''', '''
-+---+
-| |
-O |
-| |
-|
-|
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
 =========''', '''
-+---+
-| |
-O |
-/| |
-|
-|
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
 =========''', '''
-+---+
-| |
-O |
-/|\ |
-|
-|
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
 =========''', '''
-+---+
-| |
-O |
-/|\ |
-/ |
-|
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
 =========''', '''
-+---+
-| |
-O |
-/|\ |
-/ \ |
-|
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
 =========''']
 
 print("JUEGO DEL SUICIDIO")
@@ -80,11 +80,11 @@ while count <= 6:
                 converted[i] = user
         if "_" not in converted:
             count = 8
-if count < 7:
-    print(HANGMANPICS[count])
-else:
-    print("\nWord was:", computer)
-print(converted)
+    if count < 7:
+        print(HANGMANPICS[count])
+    else:
+        print("\nWord was:", computer)
+    print(converted)
 if count == 8:
     print("You won a kiss from Ulises Escalante!!")
 else:
